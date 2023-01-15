@@ -1,0 +1,16 @@
+.row{
+  background-color: #181818;
+  padding-top: 40px;
+  margin: auto;
+  padding-bottom: 6rem;
+  color: aliceblue;
+  text-align: center;
+  height: 110vh;
+}
+
+@media (max-width: 755px){
+  .row{
+   height: 120vh;
+
+  }
+}

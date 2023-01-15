@@ -1,0 +1,55 @@
+#ivi {
+  height: 150vh;
+
+}
+
+.color-acento{ color:blueviolet;
+}
+
+#ivi .container{
+  text-align: center;
+  padding-top: 200px;
+}
+
+#ivi .img-container{
+  background-image: url("../../../assets/IMG/close-up-image-of-programer-working-at-his-desk-in-office.jpg");
+  background-size: cover;
+  height: 500px;
+  width: 1150px;
+}
+
+#ivi .texto{
+  text-align: center;
+  padding-top: 50px;
+  height: 90vh;
+}
+
+@media (max-width: 755px){
+
+  #ivi .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#ivi .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ivi h2{
+    margin-top: 0px;
+}
+
+#ivi .img-container{
+    background-image: url("../../../assets/IMG/close-up-image-of-programer-working-at-his-desk-in-office.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+}

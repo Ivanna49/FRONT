@@ -1,0 +1,77 @@
+
+.row{
+  background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.994817910074186) 40%, rgba(28,3,50,1) 51%, rgba(45,27,116,1) 62%, rgba(140,88,187,1) 74%, rgba(159,111,204,1) 98%);
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 101%;
+    position:fixed;
+
+
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes{
+  margin-right: 0.5em;
+  color: rgb(255, 255, 255);
+}
+
+#logoAP{
+  width: 200px;
+
+
+}
+
+
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: rgb(87, 73, 167);
+}
+
+i.fa-brands.fa-instagram.fa-2xl:hover{
+color:firebrick;
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color:blue;
+}
+
+i.fa-brands.fa-whatsapp.fa-2xl:hover{
+    color:forestgreen;
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+  color:blueviolet;
+}
+
+
+.list-group{
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-color: none;
+}
+
+    .list-group-item{
+     display: inline-block;
+     align-items:center;
+     justify-content: space-between;
+     color: rgb(255, 255, 255);
+     padding-right: 20px;
+  }
+
+/*--- Para la vista de celular ---*/
+@media (max-width: 575px){
+  .container{
+      flex-direction: column;
+  }
+  .redes{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .list-group-item{
+      margin: 0.2em;
+  }
+}
+

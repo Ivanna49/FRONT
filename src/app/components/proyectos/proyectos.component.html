@@ -1,0 +1,58 @@
+<section class="proyectos">
+  <h2 class="text-center">Mis Proyectos</h2>
+
+
+
+
+<div class="card-deck">
+  <div class="col-lg-1">
+    <button type="button" class="btn btn-dark" routerLink="/nuevopro" *ngIf="isLogged">
+        Nuevo Proyecto
+    </button>
+</div>
+<table class="table">
+  <tbody>
+      <tr *ngFor="let Proyecto of pro">
+          <td>
+              <h2 class="text-white">{{Proyecto.nombreE}}</h2>
+          </td>
+          <td  class="text-white">{{Proyecto.descripcionE}}</td>
+          <td *ngIf="isLogged">
+              <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
+                  <i class="bi bi-pencil-fill"></i> EDITAR</button>
+          </td>
+          <td *ngIf="isLogged">
+              <button class="btn btn-danger"(click)="delete(Proyecto.id)">
+                  <i class="bi bi-trash-fill"></i> BORRAR</button>
+          </td>
+          <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      </tr>
+  </tbody>
+</table>
+
+
+  <div class="card">
+      <img class="card-img-top" src="assets/IMG/giphy.gif" alt="">
+      <div class="card-block">
+          <h4 class="card-title text-center">Mi maqueta estática</h4>
+          <a class="btn btn-outline-info btn-sm">Click</a>
+    </div>
+  </div>
+  <div class="card">
+      <img class="card-img-top" src="assets/IMG/2.-FL-From-replit.com-HolaMundojava.webp">
+      <div class="card-block">
+          <h4 class="card-title">Portfolio en Angular</h4>
+          <a href="/PAGINA.MAIN/index.html" target="_blank" class="btn btn-outline-info btn-sm">Click</a>
+         </div>
+        </div>
+  <div class="card">
+      <img class="card-img-top" src="assets/IMG/Selección-múltiple-con-replit.gif">
+      <div class="card-block">
+          <h4 class="card-title">Mis repositorios de Github</h4>
+          <a href="https://github.com/Ivanna49?tab=repositories" target="_blank" class="btn btn-outline-info btn-sm">
+            Click</a>
+      </div>
+  </div>
+</div>
+</section>
+

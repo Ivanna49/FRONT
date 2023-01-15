@@ -1,0 +1,43 @@
+#about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 10px;
+
+}
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  color: white;
+  background-color: blueviolet;
+}
+
+#about button{
+  font-size: 0.9em;
+  width: 140px;
+  margin-left:-5em;
+}
+
+.container.text-xx1-center{
+  padding-left:5%;
+  padding-top: 70px;
+}
+
+.nombre{
+  width: 200px;
+}
+
+.img-fluid:hover {
+  transform:scale(1.1);
+}
+
+@media (max-width: 755px){
+
+#about button{
+ margin-left:2em;
+}
+}

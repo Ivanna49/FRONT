@@ -9,7 +9,7 @@ import { Cursos } from '../model/cursos';
 export class CursosService {
 
 
-URL = 'http://localhost:8080/cursos/';
+URL = 'https://backendib.onrender.com/cursos/';
 
   constructor(private httpClient: HttpClient) { }
 

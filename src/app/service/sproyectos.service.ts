@@ -8,7 +8,7 @@ import { Proyectos} from '../model/proyectos';
 })
 export class SProyectosService {
 
-proURL= 'http://localhost:8080/nuepro/';
+proURL= 'https://backendib.onrender.com/nuepro/';
 
   constructor(private httpClient: HttpClient) { }
 

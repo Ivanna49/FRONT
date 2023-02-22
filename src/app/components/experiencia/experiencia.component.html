@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="div">
+    <div id="experiencia">
+      <section>
+        <h2 class="heading">Experiencia</h2>
+        <div *ngIf="isLogged">
+          <div style="text-align: left" *ngIf="isLogged">
+            <button
+              type="button1"
+              class="bi bi-plus-circle-fill"
+              routerLink="/newexp"
+              *ngIf="isLogged">
+              Agregar
+         </button>
+          </div>
+        </div>
+        <div class="experiencia-block" *ngFor="let Experiencia of exp">
+          <h3>{{Experiencia.nombreE}}</h3>
+          <h4>{{Experiencia.descripcionE}}</h4>
+          <div style="float: left" *ngIf="isLogged">
+            <button
+              class="btn btn-light"
+              routerLink="/editexp/{{Experiencia.id}}">
+              <i class="bi bi-pencil-fill"></i></button>
+          </div>
+          <div style="float: left" *ngIf="isLogged">
+            <button class="btn btn-dark" (click)="delete(Experiencia.id)">
+              <i class="bi bi-trash3-fill"></i></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+

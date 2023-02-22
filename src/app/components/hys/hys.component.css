@@ -1,0 +1,32 @@
+.row{
+  padding: 20px;
+  width: 101.7% !important;
+}
+  div{
+  background-color:#342d2d;
+  text-align: center;
+
+  }
+  h2{
+    font-size: 2rem;
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 3rem;
+    color:#ffff;
+  }
+
+
+  @media(max-width: 767px){
+  .circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  }
+  @media(max-width: 574px){
+    .circulo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }

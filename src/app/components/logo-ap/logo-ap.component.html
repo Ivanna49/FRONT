@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="container">
+    <div class="logo">
+      <img src="../../../assets/IMG/APLogo-20-20.png" id="logoAP" alt="logo Argentina Programa">
+    </div>
+    <div class="redes">
+       <a href="https://www.instagram.com/ivanna.lopezbarbona/"target="_blank"><img src="../../../assets/IMG/instagram.png" id="instagram" class="instagram-icon"></a>
+        <a href="https://www.linkedin.com/in/ivanna-lopez-barbona/"target="_blank"><img src="../../../assets/IMG/linkedin.png" id="linkedin"></a>
+        <a href="https://www.facebook.com/ivanna.lopezbarbona/"target="_blank"><img src="../../../assets/IMG/facebook.png" id="facebook"></a>
+        <a href="https://github.com/Ivanna49/"target="_blank"><img src="../../../assets/IMG/github.png" id="github"></a>
+        <button type="button" class="btn btn-outline-light"(click)="login()" *ngIf="!isLogged">INGRESO</button>
+        <button type="button" class="btn btn-outline-light"(click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+      </div>
+    </div>
+  </div>
+

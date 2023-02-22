@@ -1,43 +1,59 @@
-#about{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.row{
+  padding: 20px;
+  font-size: 1.1rem;
+  height: 300px;
+  }
+  h2{
+    font-size: 1.7rem;
+    font-style: oblique;
+ }
+
+  div{
+  background-color:#ffff ;
   text-align: center;
-  flex-direction: column;
-  height: 10px;
+  }
 
+  #nombre{
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: x-large;
 }
-button{
-  font-size: 1.25em;
-  font-weight: bold;
-  border-radius: 5px;
-  border: 2px solid rgba(0,0,0,0.3);
-  color: white;
-  background-color: blueviolet;
-}
+  button{
+    font-size: 0.8em;
+    border-radius: 5px;
+  }
 
-#about button{
-  font-size: 0.9em;
-  width: 140px;
-  margin-left:-5em;
-}
+  .img-fluid:hover {
+    transform:scale(1.1);
+  }
 
-.container.text-xx1-center{
-  padding-left:5%;
-  padding-top: 70px;
-}
+  /*estilo foto de perfil*/
+  @media (min-width: 576px){
+    #fotodeperfil{
+    position: absolute;
+    width: 13%;
+    border-radius: 100%;
+    left: 3%;
+    top: 700px;
+  }
+  }
 
-.nombre{
-  width: 200px;
-}
+  @media (max-width: 575px){
+   #fotodeperfil{
+   position: absolute;
+   width: 25%;
+   border-radius: 100%;
+   left: 30%;
+   top: 530px;
+     }
 
-.img-fluid:hover {
-  transform:scale(1.1);
-}
+     .row{
+      padding: 20px;
+      font-size: 1rem;
+      height:250px;
 
-@media (max-width: 755px){
 
-#about button{
- margin-left:2em;
-}
-}
+      }
+  }
+

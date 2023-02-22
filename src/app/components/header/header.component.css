@@ -1,0 +1,8 @@
+div{
+  background: rgb(26,48,43);
+  background: linear-gradient(90deg, rgba(26,48,43,1) 26%, rgba(26,59,52,1) 50%, rgba(123,172,165,1) 87%);
+  height: 100px !important;
+}
+app-social{
+  float: right;
+}

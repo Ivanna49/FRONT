@@ -1,0 +1,60 @@
+.div {
+  background: #ffff;
+
+}
+.button {
+  padding-top: 2px;
+}
+
+#experiencia {
+  padding: 50px 15px 20px 15px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 50px;
+  font-style: oblique;
+}
+
+.experiencia-block {
+  background-color: #5F9EA0;
+  max-width: 950px;
+  height: 135px;
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #000000;
+  text-align: center;
+  box-shadow: 10px 10px 30px rgb(193, 244, 221);
+  border-radius: 14px;
+}
+
+.experiencia-block h3 {
+  font-weight: 400;
+  float: none;
+  margin: 0;
+  color: #000000;
+}
+
+.experiencia-block h4 {
+  color: #f3fdf9;
+  clear: both;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+

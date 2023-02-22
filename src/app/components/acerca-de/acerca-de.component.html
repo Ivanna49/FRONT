@@ -1,11 +1,26 @@
-<section id="about">
-  <div class="container text-xx1-center">
-  <div class="col-2">
-     <img src="assets/IMG/IVI.jpg" class="img-fluid rounded-circle"  w-25 alt="..." title="...">
-     <h3 class="nombre">{{persona.nombre}} {{persona.apellido}}</h3></div>
-     <div class="col-3">
-      <a href="assets/IMG/cvbarbona.pdf" download="cvbarbona.pdf"><button>DESCARGAR CV</button></a>
-      </div>
+<div class="row" *ngIf="persona" >
+<div style="text-align: right" *ngIf="isLogged">
+  <button
+    type="button1"
+    class="bi bi-plus-circle-fill"
+   routerLink="/editacercade/1"  >
+        Editar
+    </button>
+</div>
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <img src={{persona?.img}} class="img-fluid" id="fotoDePerfil">
+  </div>
+  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+      <h3 id="nombre">{{persona?.nombre}} {{persona?.apellido}}</h3>
+      <h6>Full Stack Developer Jr.</h6>
+  </div>
+  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+      <span>
+          <h2>Acerca de mí</h2>
+          <p>{{persona?.descripcion}}</p>
+      </span>
+  </div>
+  <div class="col-12">
+    <a href="assets/IMG/cvbarbona.pdf" download="cvbarbona.pdf"><i class="bi bi-download"></i>>DESCARGAR CV</a>
     </div>
-
-</section>
+</div>
